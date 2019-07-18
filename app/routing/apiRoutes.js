@@ -3,7 +3,7 @@
 // These data sources hold arrays of information on table-data
 // ===============================================================================
 
-var surveyData = require("../data/friends");
+var friendsArray = require("../data/friends");
 
 
 // ===============================================================================
@@ -15,8 +15,8 @@ module.exports = function (app) {
     // Below code handles when users "visit" a page.
     // ---------------------------------------------------------------------------
 
-    app.get("/api/survey", function (req, res) {
-        res.json(surveyData);
+    app.get("/api/friends", function (req, res) {
+        res.json(friendsArray);
     });
 
 
