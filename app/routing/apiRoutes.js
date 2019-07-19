@@ -34,8 +34,9 @@ module.exports = function (app) {
         //write the logic that compares the new friend object to the friends.js object
         //do comparison with req.body.
         //then return that friend to survey.html
-        res.json(newFriendMatch);
+
         friendsArray.push(req.body)
+        res.json(newFriendMatch);
 
     });
 

@@ -217,6 +217,10 @@
 
             $.post("/api/friends", newfriend)
                 .then(function (resFromServer) {
+                    $("#match-name").text(resFromServer.name);
+                    $("#match-img").attr(resFromServer.photo)
+                    $("#results-modal").show();
+
                     console.log(resFromServer);
 
                 });
