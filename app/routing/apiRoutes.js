@@ -29,10 +29,13 @@ module.exports = function (app) {
     // ---------------------------------------------------------------------------
 
     app.post("/api/friends", function (req, res) {
+        console.log(req.body)
+        var newFriendMatch = friendsArray[Math.floor(Math.random() * friendsArray.length)]
         //write the logic that compares the new friend object to the friends.js object
         //do comparison with req.body.
         //then return that friend to survey.html
-
+        res.json(newFriendMatch);
+        friendsArray.push(req.body)
 
     });
 

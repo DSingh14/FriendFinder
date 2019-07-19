@@ -194,54 +194,34 @@
 
     <script type="text/javascript">
         // validate form on submit
-        $("#submit").on("click", function () {
-            function validateFrom() {
-                var isValid = true;
-                $(".form-control").each(function () {
-                    if ($(this).val() === '')
-                        isValid = false;
-                });
-                $(".chosen-select").each(function () {
-                    if ($(this).val() === "")
-                        isValid = false;
-
-                })
-                return isValid;
-
-            }
-
-            if (validateFrom() === true) {
-                var newfriendMatch =
-                {
-                    name: $("#name").val().trim(),
-                    photo: $("#photo").val().trim(),
-                    scores: [
-                        $("#q1").val().trim(),
-                        $("#q2").val().trim(),
-                        $("#q3").val().trim(),
-                        $("#q4").val().trim(),
-                        $("#q5").val().trim(),
-                        $("#q6").val().trim(),
-                        $("#q7").val().trim(),
-                        $("#q8").val().trim(),
-                        $("#q9").val().trim(),
-                        $("#q10").val().trim()]
-                }
-            }
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            var newfriend =
+            {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [
+                    $("#q1").val().trim(),
+                    $("#q2").val().trim(),
+                    $("#q3").val().trim(),
+                    $("#q4").val().trim(),
+                    $("#q5").val().trim(),
+                    $("#q6").val().trim(),
+                    $("#q7").val().trim(),
+                    $("#q8").val().trim(),
+                    $("#q9").val().trim(),
+                    $("#q10").val().trim()]
+            };
+            console.log(newfriend);
 
 
-
-
-
-
-
-            $.post("/api/friends", newfriendMatch)
-                .then(function (data) {
-                    console.log("survey.html", data);
+            $.post("/api/friends", newfriend)
+                .then(function (resFromServer) {
+                    console.log(resFromServer);
 
                 });
+        });
 
-        //take the new friend object and push it to the api route /api/friends
     </script>
 
 </body>

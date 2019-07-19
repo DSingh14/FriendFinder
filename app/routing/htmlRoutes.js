@@ -6,12 +6,20 @@ var path = require("path");
 module.exports = function (app) {
     //  HTML get request for navigation from home page to survey page
     //  user enters survey via HTMl file
+
+    // if survey result is shown, back to home page
+    app.get("/", function (req, res) {
+        res.sendFile(path.join(__dirname, "../public/home.html"));
+    });
     app.get("/survey", function (req, res) {
         res.sendFile(path.join(__dirname, "/../public/survey.html"));
     });
-    // if survey result is shown, back to home page
-    app.use("/", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/home.html"));
-    });
+
 };
 
+
+
+//get
+//put
+//post
+//delete
