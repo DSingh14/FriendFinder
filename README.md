@@ -21,13 +21,13 @@ To use our web service, simply go to our homepage and take our state-of-the-art 
 ### Working image
 * Screenshot of output when we run "localhost:7000/" for homepage.
 
-<img src="https://github.com/DSingh14/FriendFinder/blob/master/app/public/image/Untitled.png" alt="center" width="400" height="400" class="center">
+<img src="https://github.com/DSingh14/FriendFinder/blob/master/app/public/image/Untitled.png" alt="center" width="500" height="400" align="center" margin-left: 20px>
 
 
 * Screenshot of output when we run "localhost:7000/survey" for taking quiz.
 
-<img src="https://github.com/DSingh14/FriendFinder/blob/master/app/public/image/quiz.png" alt="center" width="400" height="400">
+<img src="https://github.com/DSingh14/FriendFinder/blob/master/app/public/image/quiz.png" alt="center" width="500" height="400">
 
 * Screenshot of output when we run "localhost:7000/survey" for getting match.
 
-<img src="https://github.com/DSingh14/FriendFinder/blob/master/app/public/image/image.jpg" alt="center" width="400" height="400">
+<img src="https://github.com/DSingh14/FriendFinder/blob/master/app/public/image/image.jpg" alt="center" width="500" height="400">
