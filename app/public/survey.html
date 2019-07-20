@@ -179,7 +179,9 @@
                 </div>
                 <div class="modal-body">
                     <h2 id="match-name"></h2>
-                    <img id="match-img"
+
+
+                    <img id="match-img" class="img-thumbnail"
                         src="http://cdn3-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-15.jpg"
                         alt="">
                 </div>
@@ -225,7 +227,7 @@
                 .then(function (resFromServer) {
                     $("#match-name").text(resFromServer.name);
                     $("#match-img").attr(resFromServer.photo)
-                    $("#results-modal").modal();
+                    $("#results-modal").modal("toggle");
 
                     console.log(resFromServer);
 
