@@ -21,3 +21,9 @@ To use our web service, simply go to our homepage and take our state-of-the-art 
 ### Working image
 * Screenshot of output when we run "localhost:7000/" for homepage.
 ![friendFinder](https://github.com/DSingh14/FriendFinder/blob/master/app/public/image/Untitled.png)
+
+* Screenshot of output when we run "localhost:7000/survey" for taking quiz.
+![friendFinder](https://github.com/DSingh14/FriendFinder/blob/master/app/public/image/quiz.png)
+
+* Screenshot of output when we run "localhost:7000/survey" for getting match.
+![friendFinder](https://github.com/DSingh14/FriendFinder/blob/master/app/public/image/image.jpg)
