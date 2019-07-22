@@ -251,7 +251,7 @@
                 $.post("/api/friends", newfriend)
                     .then(function (resFromServer) {
                         $("#match-name").text(resFromServer.name);
-                        $("#match-img").attr(resFromServer.photo)
+                        $("#match-img").attr("src", resFromServer.photo)
                         $("#results-modal").modal("toggle");
 
                         console.log(resFromServer);
