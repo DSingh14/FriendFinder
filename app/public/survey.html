@@ -229,6 +229,7 @@
             // validate form on submit
             $("#submit").on("click", function (event) {
                 event.preventDefault();
+
                 var newfriend =
                 {
                     name: $("#name").val().trim(),
@@ -257,6 +258,20 @@
                         console.log(resFromServer);
 
                     });
+
+                $("#name").empty();
+                $("#photo").empty();
+                $("#q1").empty();
+                $("#q2").empty();
+                $("#q3").empty();
+                $("#q4").empty();
+                $("#q5").empty();
+                $("#q6").empty();
+                $("#q7").empty();
+                $("#q8").empty();
+                $("#q9").empty();
+                $("#q10").empty();
+                $("#submit").empty();
             });
 
         </script>
